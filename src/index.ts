@@ -1,14 +1,14 @@
-import { Logger } from './utils/Logger';
-import { Calculator } from './utils/Calculator';
+// src/index.ts
+
+import { IteratorDemo } from "./utils/Book";
 
 function main() {
-    const logger = new Logger();
-    const calc = new Calculator();
+    console.log("🚀 === EJECUTANDO ITERATOR PATTERN === 🚀\n");
     
-    logger.info('Iniciando aplicación...');
+    // Ejecutar demo del Iterator Pattern
+    IteratorDemo.run();
     
-    const result = calc.add(5, 3);
-    logger.info(`Resultado: 5 + 3 = ${result}`);
+    console.log("\n🎉 === ¡DEMO COMPLETADO! === 🎉");
 }
 
 main();
